@@ -1,0 +1,62 @@
+.div3 {
+  background-color: $colorFont;
+  font-family: $fontText1;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 30px;
+
+  @media (min-width: 1440px) {
+    flex-direction: row-reverse;
+    gap: 130px;
+    padding: 130px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.titulocoso3 {
+  font-family: $fontText2;
+}
+.parrafo3 {
+  color: $colorFont3;
+}
+
+.container-image3 img {
+  width: 100%;
+  margin: 10px;
+  max-width: 600px;
+}
+.imagen3 {
+  width: 100%;
+}
+.container-ver-mas {
+  display: flex;
+  padding: 14px 0px 14px 0px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 470px;
+}
+
+.ver-mas {
+  background-color: $colorFont2;
+  color: $colorFont;
+  font-family: $fontText2;
+  padding: 15px 30px;
+  font-size: 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 48px;
+  transition: transform 0.5s ease;
+  &:hover {
+    transform: scale(1.1, 1.1);
+  }
+}

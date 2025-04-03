@@ -1,0 +1,88 @@
+@keyframes mouse {
+  100% {
+    transform: translatex(10px);
+  }
+}
+
+.cabecera {
+  min-width: $minWidthMobile;
+  background-color: $colorLink1;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  padding-left: 22px;
+  position: sticky;
+  top: 0;
+
+  &-contenido-movil {
+    display: flex;
+    align-items: center;
+    &-a {
+      &:hover {
+        animation-name: mouse;
+        animation-duration: 0.4s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 2;
+        animation-direction: alternate;
+        cursor: pointer;
+      }
+    }
+  }
+
+  @media (min-width: 1440px) {
+    justify-content: space-between;
+    padding: 35px 130px 35px 135px;
+    height: 100%;
+  }
+}
+
+.logo-cabecera {
+  width: 50px;
+}
+
+.texto-cabecera {
+  font-size: 36px;
+  width: 162px;
+  padding-left: 10px;
+  color: $colorFont;
+  font-family: $fontText1;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.menu-hamburguesa {
+  width: 30px;
+  position: absolute;
+  right: 41.9px;
+
+  @media (min-width: 1440px) {
+    display: none;
+  }
+}
+
+.contenedor-menu {
+  display: none;
+
+  @media (min-width: 1440px) {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.listado-menu {
+  display: flex;
+  font-size: 20px;
+  color: $colorFont;
+  font-family: $fontText1;
+  gap: 30px;
+  & a {
+    color: $colorFont;
+  }
+  & li {
+    &:hover {
+      transform: scale(0.9, 0.9);
+    }
+  }
+}

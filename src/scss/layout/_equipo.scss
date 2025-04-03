@@ -1,0 +1,43 @@
+.NuestroEquipo {
+  text-align: center;
+}
+
+.equipo {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.FotoEquipo {
+  background-color: white;
+  width: 279px;
+  height: 299px;
+  padding: 20px;
+  margin: 40px;
+  border-radius: 5.2px;
+  box-shadow: 5px 5px 10px grey;
+  text-align: center;
+}
+.FotoEquipo h2,
+.FotoEquipo p {
+  text-align: left;
+}
+.image-user {
+  width: 130px;
+  margin: 20px;
+  border-radius: 50%;
+}
+.profesio {
+  color: grey;
+}
+
+@media (min-width: 1440px) {
+  .equipo {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+}

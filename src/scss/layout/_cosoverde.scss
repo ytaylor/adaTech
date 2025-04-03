@@ -1,0 +1,67 @@
+.cosoverde {
+  background-color: $colorLink1;
+  font-family: $fontText1;
+  color: $colorFont;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 100%;
+}
+.titulo3 {
+  padding-top: 15px;
+  color: $colorFont4;
+}
+.titulo2 {
+  font-family: $fontText2;
+}
+.foto_idea {
+  width: 100%;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 470px;
+}
+
+.explora {
+  background-color: $colorFont;
+  color: $colorFont2;
+  font-family: $fontText1;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 15px 30px;
+  font-size: 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 10px;
+  margin-left: 0px;
+  width: 170px;
+  height: 40px;
+  transition: transform 0.5s ease;
+  &:hover {
+    transform: scale(1.1, 1.1);
+  }
+}
+.welcome {
+  padding-bottom: 15px;
+  padding-top: 30px;
+  color: white;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 470px;
+}
+
+@media (min-width: 1440px) {
+  .cosoverde {
+    flex-direction: row-reverse;
+    gap: 130px;
+    padding: 130px;
+    justify-content: center;
+    align-items: center;
+  }
+}

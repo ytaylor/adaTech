@@ -1,0 +1,60 @@
+.textoeimagen {
+  background-color: $colorFont;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 30px;
+}
+@media (min-width: 1440px) {
+  .textoeimagen {
+    display: flex;
+    flex-direction: row;
+    gap: 130px;
+    align-items: center;
+    padding: 130px;
+  }
+}
+.parrafo2 {
+  color: $colorFont3;
+  font-family: $fontText1;
+}
+
+.image {
+  width: 100%;
+  margin: 10px;
+  max-width: 600px;
+}
+.texto {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 470px;
+}
+
+.photo {
+  width: 100%;
+}
+.container_button2 {
+  display: flex;
+  padding: 14px 0px 14px 0px;
+  transition: transform 0.5s ease;
+  &:hover {
+    transform: scale(1.1, 1.1);
+  }
+}
+
+.button-2 {
+  background-color: $colorFont2;
+  color: $colorFont;
+  font-family: $fontText2;
+  padding: 15px 30px;
+  font-size: 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 48px;
+}
